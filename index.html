@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    #spinner{
+        display: none;
+    }
+    .card-style{
+        height: 250px
+    }
+
+</style>
+</head>
+<body>
+    <h3 class="text-center text-success my-3">Search your favourite Book</h3>
+    
+            <!-- Search Area  -->
+
+    <div class="container-fluid input-group mb-3 w-50 mx-auto">
+        <input type="text" id="searchText" class="form-control" placeholder="Search the book you want" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>  
+    
+
+           <!-- Toggle Spinner  -->
+
+    <div  class="d-flex justify-content-center">
+        <div id="spinner" class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    
+            <!-- Search Number  -->
+    <div id="resultNumber"></div>  
+
+            <!-- Search Result  -->
+    
+        <div id="result" class="mx-auto mt-5 row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    
+            
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
